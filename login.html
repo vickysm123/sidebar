@@ -41,12 +41,12 @@
                                        
              <div class="container">
                 <label for="uname"><b>Email</b></label>
-                <input type="text" id="email" placeholder="Email"> 
+                <input type="text" id="text" placeholder="Email"> 
                
                 <label for="psw"><b>Password</b></label>
                 <input type="password" id="pwd" placeholder="Password">
                     
-                <a href=""><button type="submit" value="submit" onclick="checkData()">Login</button></a>
+                <a href=""><button  onclick= "validate()" type="button">Login</button></a>
                 <a href="register.html"> <button type="button" style="background-color: #dc3545">Register</button></a>
                 <label>
                   <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -71,31 +71,43 @@
         <p><input type="submit" value="Submit" /></p>
     </form> -->
 </body>
-<script type="text/javascript">
+<script>
     
-    function checkData(){
-        var email=document.getElementById('email').value;
-        var password=document.getElementById('pwd').value;
+    // function checkData(){
+    //     var email=document.getElementById('email').value;
+    //     var password=document.getElementById('pwd').value;
       
-        var getEmail=localStorage.getItem('userEmail');
-        var getpwd=localStorage.getItem('userPassword');
+    //     var getEmail=localStorage.getItem('userEmail');
+    //     var getpwd=localStorage.getItem('userPassword');
 
-        if(email == getEmail){
-            if(password == getPwd){
-                alert('login sucessful');
-            }
-            else{
+    //     if(email == getEmail){
+    //         if(password == getPwd){
+    //             alert('login sucessful');
+    //         }
+    //         else{
                 
-                alert('invalid emailid');
-            }
-        }
-        else{
-            alert('wrong password');
-        }
-        }
+    //             alert('invalid emailid');
+    //         }
+    //     }
+    //     else{
+    //         alert('wrong password');
+    //     }
+    //     }
+function validate(){
+  var mail =document.getElementById('text').value;
+  var regx =/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+  if(regx.text(mail)){
+alert("Entered Detail Is Correct");
+return true;
+  }
+  else{
+    alert("Entered Incorrect Detail");
+    return false;
+  }
+}
 
 </script>
-// <!-- <script>
+ <!-- <script>
 //     function validateForm() {
 //   let x = document.forms["myForm"]["uname"].value;
 //   if (x == "") {
