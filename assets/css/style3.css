@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-orange: #f3284c;
+    --color-black: #000;
+
+}
+
+.top_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #FFECB3; */
+    background-color: #ffd40d;
+    height: 5.2rem;
+    padding: 0px 4.5rem;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
+    margin: 2px;
+    font-weight: 500;
+    padding-left: 0;
+}
+
+i.fa-solid.fa-mobile {
+    background: var(--color-orange);
+    padding: 13px;
+    border-radius: 50px;
+    width: 40px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+i.fa-solid.fa-envelope {
+    background: var(--color-orange);
+    padding: 13px;
+    border-radius: 50px;
+    width: 40px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+i.fa-solid.fa-user {
+    background: var(--color-orange);
+    padding: 13px;
+    border-radius: 50px;
+    width: 40px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.navsbar {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.link_new :visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 5.8rem;
+    padding: 0px 4.5rem;
+
+}
+
+.link_new {
+    color: var(--color-black);
+    text-decoration: none;
+    font-weight: 800;
+    font-family: system-ui;
+}
+
+.links_new {
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+span.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-black);
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color: #ff4500d1;
+    transform: scale(1, 1.1);
+}
+
+.content {
+    position: absolute;
+    top: 18%;
+    left: 9%;
+}
+
+h2.content_para {
+    color: #fff;
+    font-size: 51px;
+    font-weight: 700;
+    font-family: cursive;
+
+}
+
+h5.content_para1 {
+    color: #fff;
+    margin-top: 22px;
+    line-height: 42px;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+button.btn-danger {
+    padding: 15px 51px;
+    border-radius: 12px;
+    margin-top: 22px;
+    margin-left: 20%;
+    background-color: #f3284c;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    z-index: 1111;
+}
+
+button.btn-danger:before {
+    content: "";
+    position: absolute;
+    width: 96%;
+    /* right: -8px; */
+    border: 3px solid #f3284c;
+    height: 75px;
+    border-radius: 12px;
+    top: -17%;
+    left: 12%;
+    z-index: -1;
+
+
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #f3284c;
+    border-color: #f3284c;
+}
+
+button.btn-danger:before {
+    transition: .3s ease-in-out;
+}
+
+button.btn-danger:hover:before {
+    width: 18%;
+}
+
+.menu {
+    padding: 120px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: xxx-large;
+    font-family: system-ui;
+    font-weight: 700;
+}
+
+.line {
+    width: 270px;
+    height: 12px;
+    background-color: #ffd40d;
+    border-radius: 26px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    transition: .3s ease-in-out;
+}
+.line:hover{
+    width: 2%;
+    cursor: pointer;
+}
+.featured-dishes-img:before {
+    content: "";
+    width: 275px;
+    height: 124px;
+    position: absolute;
+    border-radius: 112px;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.featured-dishes-img:before {
+    background-color: #f3274c;
+}
+
+.featured-dishes {
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid #ffd40d;
+}
+
+.featured-dishes-img {
+    position: relative;
+}
+
+img.new {
+    position: relative;
+    width: 100%;
+
+}
+
+ul.star {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-evenly; */
+    letter-spacing: 8px;
+    color: #ffd40d;
+    padding: 0;
+}
+
+h4 {
+    font-size: 19px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+p.for{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+span.that{
+    color: #f3274c;
+}
+
+
+
+

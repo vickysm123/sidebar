@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style1.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Dashboard</title>
+
+    <style>
+      body {
+        background-color: #eeeeeee6;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <div class="header">
+        <div class="side-nav">
+          <div class="user">
+            <img src="img/user.jpg" />
+            <h2>Thomas Daniel</h2>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-house"></i> Dashboard</li>
+            <li><i class="fa-solid fa-gear"></i> Settings</li>
+            <li><i class="fa-solid fa-utensils"></i> Restaurent Management</li>
+            <li><i class="fa-solid fa-user"></i>Restaurent Owner Management</li>
+            <li>
+              <i class="fa-solid fa-person-military-pointing"></i> Customer
+              Management
+            </li>
+            <li><i class="fa-solid fa-thumbs-up"></i> Manage Choice</li>
+            <li><i class="fa-solid fa-square-nfi"></i> Item Management</li>
+            <li><i class="fa-solid fa-people-roof"></i>Delivery Manager</li>
+          </ul>
+          <ul>
+            <a href="index.html">
+              <li><i class="fa-solid fa-right-from-bracket"></i> Log Out</li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </aside>  
+     
+    <section class="first_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card fourth">
+              <h6 class="cardheading">26k(-12% Users)</h6>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card first">
+              <h6 class="cardheading">$6.300(60.7%)</h6>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card second">
+              <h6 class="cardheading">2.49%(84.7%)</h6>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card third">
+              <h6 class="cardheading">44k(-19% Users)</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h5>Customer Graph:</h5>
+            <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+          </div>
+          <div class="col-sm-6">
+            <h5>Merchant Graph:</h5>
+            <canvas
+              id="myCharts"
+              style="width: 100%; max-width: 600px"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="second_section">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-sm-6">
+            <div class="card table">
+              <h5>Customers:</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Sl No</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>mark123@gmail.com</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>jacob32@gmail.com</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> -->
+          <div class="col-sm-12">
+            <div class="card table">
+              <h5>Merchant:</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Sl no</th>
+                    <th scope="col">Full name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>mark123@gmail.com</td>
+                    <td>987865348</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><a href="edit.html"><i class="fa-solid fa-pen-to-square"></i></a><a href="url_to_delete" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa-solid fa-trash"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>jacob32@gmail.com</td>
+                    <td>987865348</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="">Larry</td>
+                    <td>larryq123@gmail.com</td>
+                    <td>987865348</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>987865348</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>987865348</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td colspan="">Larry</td>
+                    <td>larry123@gmail.com</td>
+                    <td>987865348</td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

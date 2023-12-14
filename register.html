@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style2.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>login</title>
+    <style>
+        body {
+          background-color: #eeeeeee6;
+       
+        }
+        </style>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h2><img src="img/logo.png"></h2>
+
+            <form method="post" action="dashboard.html" onsubmit="return CheckForBlank();">
+                                       
+                                       
+             <div class="container">
+                <label for="uname"><b>Email</b></label>
+                <input type="text" id="email" placeholder="Email"> 
+               
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="pwd" placeholder="Password">
+                    
+                <a href=""><button type="submit" value="submit" onclick="addData()">Login</button></a>
+                <a href="register.html"> <button type="button" style="background-color: #dc3545">Register</button></a>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+            
+              
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            
+            </form>
+        </div>
+    </div>
+     
+     
+</head>
+<!-- <body>
+
+    <form method="post" action="2013.php" onsubmit="return CheckForBlank();">
+        Name: <input type="text" name="name" id="name"/>
+        Age: <input type="text" name="age" id="age"/>
+        Email: <input type="text" name="email" id="email"/>
+        <p><input type="submit" value="Submit" /></p>
+    </form> -->
+</body>
+<script type="text/javascript">
+    // function CheckForBlank() {
+
+    //     if(document.getElementById('name').value ==="") {
+    //         alert("enter username");
+    //         return false;
+    //     }
+    //     if(document.getElementById('psw').value ==="") {
+    //         alert("enter password");
+    //         return false;
+    //     }
+    // }
+    function addData(){
+        var email=document.getElementById('email').value;
+        var password=document.getElementById('pwd').value;
+        localStorage.setItem('userEmail',email);
+        localStorage.setItem('userPassword',password);
+    }
+</script>
+<!-- <script>
+    function validateForm() {
+  let x = document.forms["myForm"]["uname"].value;
+  if (x == "") {
+    alert("Enter Your Name");
+    return false;
+  }
+}
+</script> -->
+</html>
